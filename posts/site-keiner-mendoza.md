@@ -1,6 +1,6 @@
 ---
 title: "Site Keiner Mendoza"
-is_public: false
+is_public: true
 image: ""
 tags: ["python", "django", "laravel"]
 ---

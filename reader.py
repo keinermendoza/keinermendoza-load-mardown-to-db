@@ -3,7 +3,6 @@ from typing import Any, Dict
 import frontmatter
 import markdown
 
-
 @dataclass
 class MarkdownDocument:
     metadata: Dict[str, Any] = field(default_factory=dict)

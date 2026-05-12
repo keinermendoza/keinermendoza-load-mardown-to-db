@@ -28,6 +28,7 @@ class Post(Base):
     slug = Column(String(200), unique=True, nullable=False)
     image = Column(String(200), nullable=True)
     content = Column(Text, nullable=True)
+    is_public = Column(Boolean, nullable=False)
     created_at = Column(DateTime, server_default=func.now())
     updated_at = Column(DateTime, server_default=func.now(), onupdate=func.now())
 
@@ -45,6 +46,7 @@ class Project(Base):
     slug = Column(String(200), unique=True, nullable=False)
     image = Column(String(200), nullable=True)
     content = Column(Text, nullable=True)
+    is_public = Column(Boolean, nullable=False)
     created_at = Column(DateTime, server_default=func.now())
     updated_at = Column(DateTime, server_default=func.now(), onupdate=func.now())
 
